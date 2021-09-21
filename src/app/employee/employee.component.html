@@ -30,12 +30,16 @@
       <td>
         <div *ngIf="isAdminUser; then thenBlock; else elseBlock"></div>
         <ng-template #thenBlock>
-          <div>{{ salary | currency: "&#x20B9;" }}</div>
+          <div>{{ salary | currency :"₹" }}</div>
         </ng-template>
          <ng-template #elseBlock>
            <div style="color:red;font-style:italic;">Data not available</div>
          </ng-template>
       </td>
+    </tr>
+    <tr>
+      <th>Hire Date:</th>
+      <td>{{ hiredate | date : 'dd-MMM-YYYY'}} </td>
     </tr>
   </table>
 </div>

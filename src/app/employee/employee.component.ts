@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  //selector: 'app-employee',
-  selector: '[app-employee]',
+  selector: 'app-employee',
+  //selector: '[app-employee]',
   //selector: '.app-employee',
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
@@ -15,6 +15,8 @@ export class EmployeeComponent implements OnInit {
   city:string = "Bangalore";
   email:string = "vivek.dahiya@email.com";
   salary:number = 650000.00;
+  hiredate = new Date('March 17, 2015 12:00:00');
+
 
   isAdminUser:boolean = true;
 
