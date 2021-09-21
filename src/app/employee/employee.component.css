@@ -1,0 +1,20 @@
+div.outer {
+  background-color: aliceblue;
+  padding: 10px 50px;
+  margin: 20px auto;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  display: inline-block;
+}
+div.title{
+  text-align: center;
+  font-weight: bold;
+  color:darkcyan;
+}
+th{
+  text-align: right;
+}
+td,th,div{
+  font-family: Garamond, Bookman, Tahoma, Georgia, Verdana, sans-serif;
+  font-size: 14pt;
+}
